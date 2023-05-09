@@ -9,6 +9,9 @@ public class XrTouchButton : XRBaseInteractable
     [SerializeField]
     private Material pushedMaterial;
 
+    [SerializeField]
+    private string keyInput;
+
     private MeshRenderer meshRenderer;
 
     protected override void Awake()
@@ -24,14 +27,14 @@ public class XrTouchButton : XRBaseInteractable
     {
         base.OnHoverEntered(args);
 
-        Debug.Log($"OnHoverEntered {args}");
+        Debug.Log($"OnHoverEntered input={keyInput}");
         meshRenderer.material = pushedMaterial;
     }
 
     protected override void OnHoverExited(HoverExitEventArgs args)
     {
         base.OnHoverExited(args);
-        Debug.Log($"OnHoverExited {args}");
+        Debug.Log($"OnHoverExited input={keyInput}");
         meshRenderer.material = originalMaterial;
     }
 }
