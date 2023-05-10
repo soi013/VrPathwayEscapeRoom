@@ -54,10 +54,4 @@ public class NumberPadScreenDispenser : MonoBehaviour
         textCode.text = string.Empty;
         textResult.text = string.Empty;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }

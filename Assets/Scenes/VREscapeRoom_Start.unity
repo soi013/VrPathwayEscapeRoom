@@ -755,7 +755,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 545861894}
   m_LocalRotation: {x: -0, y: 0.3644021, z: -0, w: 0.9312417}
-  m_LocalPosition: {x: -0.568, y: 1.596, z: 0.092}
+  m_LocalPosition: {x: -0.568, y: 1.243, z: 0.092}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1655,6 +1655,12 @@ MonoBehaviour:
     m_Reference: {fileID: 875253871413052681, guid: c348712bda248c246b8c49b3db54643f,
       type: 3}
   m_ButtonPressPoint: 0.5
+--- !u!82 &1167854439 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1518174320083766285, guid: 00592b75c913c8440b1b1229fb990ab9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1545019411}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1167897335
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1871,7 +1877,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1469689673}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.194, y: 0, z: -0.558}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1995,6 +2001,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CardReader
       objectReference: {fileID: 0}
+    - target: {fileID: 6424093750167672624, guid: 00592b75c913c8440b1b1229fb990ab9,
+        type: 3}
+      propertyPath: audioSuccess
+      value: 
+      objectReference: {fileID: 1167854439}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00592b75c913c8440b1b1229fb990ab9, type: 3}
 --- !u!4 &1556248109 stripped
@@ -2339,6 +2350,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 820512345}
     m_Modifications:
+    - target: {fileID: 6252323771361804889, guid: 2733043e92e2f4d7eb534ec4f68223cb,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6252323771361804891, guid: 2733043e92e2f4d7eb534ec4f68223cb,
         type: 3}
       propertyPath: m_Name

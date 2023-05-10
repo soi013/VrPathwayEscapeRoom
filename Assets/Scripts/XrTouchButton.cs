@@ -20,7 +20,7 @@ public class XrTouchButton : XRBaseInteractable
     protected override void Awake()
     {
         base.Awake();
-        Debug.Log($"Awake {this.gameObject.name}");
+        //Debug.Log($"Awake {this.gameObject.name}");
 
         meshRenderer = GetComponent<MeshRenderer>();
         originalMaterial = meshRenderer.material;
@@ -30,7 +30,7 @@ public class XrTouchButton : XRBaseInteractable
     {
         base.OnHoverEntered(args);
 
-        Debug.Log($"OnHoverEntered input={keyInput}");
+        //Debug.Log($"OnHoverEntered input={keyInput}");
         meshRenderer.material = pushedMaterial;
         KeyInputAction?.Invoke(keyInput);
     }
@@ -38,7 +38,7 @@ public class XrTouchButton : XRBaseInteractable
     protected override void OnHoverExited(HoverExitEventArgs args)
     {
         base.OnHoverExited(args);
-        Debug.Log($"OnHoverExited input={keyInput}");
+        //Debug.Log($"OnHoverExited input={keyInput}");
         meshRenderer.material = originalMaterial;
     }
 }
