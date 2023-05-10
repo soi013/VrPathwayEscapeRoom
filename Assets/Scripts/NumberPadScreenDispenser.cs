@@ -14,6 +14,10 @@ public class NumberPadScreenDispenser : MonoBehaviour
 
     private const string COLLECT_RESULT = "5555";
 
+    [SerializeField]
+    private AudioSource audioInputKey;
+
+
     void Start()
     {
         numberPad.KeyInputActionMerged += UpdateCode;
@@ -23,6 +27,7 @@ public class NumberPadScreenDispenser : MonoBehaviour
     private void UpdateCode(string inputKeyText)
     {
         textCode.text += inputKeyText;
+        audioInputKey.Play();
 
         if (textCode.text.Length == COLLECT_RESULT.Length)
         {
