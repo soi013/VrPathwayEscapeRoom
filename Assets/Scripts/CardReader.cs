@@ -17,6 +17,9 @@ public class CardReader : XRSocketInteractor
     [SerializeField]
     private AudioSource audioSuccess;
 
+    [SerializeField]
+    private GameObject targetGO;
+
     private void Awake()
     {
         targetDirection = (exitPoint.position - enterPoint.position).normalized;
@@ -58,5 +61,6 @@ public class CardReader : XRSocketInteractor
     private void OpenDoor()
     {
         audioSuccess.Play();
+        targetGO.SetActive(false);
     }
 }

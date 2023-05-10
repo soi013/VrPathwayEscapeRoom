@@ -1187,6 +1187,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1167897335}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &753734389 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 213598002925951555, guid: 505ab3b2ca9f8d943940d674d65aac07,
+    type: 3}
+  m_PrefabInstance: {fileID: 1167897335}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &805195036 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1039246434763196655, guid: 4341751daf16c594f8e7d27244abe1df,
@@ -1668,6 +1674,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 820512345}
     m_Modifications:
+    - target: {fileID: 213598002925951555, guid: 505ab3b2ca9f8d943940d674d65aac07,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 395713496640259988, guid: 505ab3b2ca9f8d943940d674d65aac07,
         type: 3}
       propertyPath: m_RootOrder
@@ -1727,6 +1738,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DoorPadlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 1024019128184364334, guid: 505ab3b2ca9f8d943940d674d65aac07,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 505ab3b2ca9f8d943940d674d65aac07, type: 3}
@@ -2001,6 +2017,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CardReader
       objectReference: {fileID: 0}
+    - target: {fileID: 6424093750167672624, guid: 00592b75c913c8440b1b1229fb990ab9,
+        type: 3}
+      propertyPath: targetGO
+      value: 
+      objectReference: {fileID: 753734389}
     - target: {fileID: 6424093750167672624, guid: 00592b75c913c8440b1b1229fb990ab9,
         type: 3}
       propertyPath: audioSuccess
