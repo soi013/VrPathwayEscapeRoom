@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
@@ -14,6 +15,8 @@ public class XrTouchButton : XRBaseInteractable
 
     private MeshRenderer meshRenderer;
 
+    public Action<string> KeyInputAction { get; set; }
+
     protected override void Awake()
     {
         base.Awake();
@@ -29,6 +32,7 @@ public class XrTouchButton : XRBaseInteractable
 
         Debug.Log($"OnHoverEntered input={keyInput}");
         meshRenderer.material = pushedMaterial;
+        KeyInputAction?.Invoke(keyInput);
     }
 
     protected override void OnHoverExited(HoverExitEventArgs args)
