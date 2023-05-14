@@ -17,6 +17,12 @@ public class NumberPadScreenDispenser : MonoBehaviour
     [SerializeField]
     private AudioSource audioInputKey;
 
+    [SerializeField]
+    private Transform dispenserPoint;
+
+    [SerializeField]
+    private Keycard keyCardPrefab;
+
 
     void Start()
     {
@@ -47,6 +53,9 @@ public class NumberPadScreenDispenser : MonoBehaviour
         textResult.text = result
             ? "VALID"
             : "INVALID";
+
+        if (result)
+            Instantiate(keyCardPrefab, dispenserPoint);
     }
 
     private void ClearInput()
